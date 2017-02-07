@@ -1,0 +1,132 @@
+<div class="form-group">
+						<label>Nama Barang</label>
+						<span id="spryselect1">
+						<input name="nama" type="text" class="form-control" placeholder="Nama Barang .." required>
+						<span class=selectRequiredMsg>Site Harus dipilih.</span></span>
+					</div>
+					<div class="form-group">
+						<label>Jenis</label>
+						<input name="jenis" type="text" class="form-control" placeholder="Jenis Barang ..">
+					</div>
+					<div class="form-group">
+						<label>Suplier</label>
+						<input name="suplier" type="text" class="form-control" placeholder="Suplier ..">
+					</div>
+					<div class="form-group">
+						<label>Harga Modal</label>
+						<input name="modal" type="text" class="form-control" placeholder="Modal per unit">
+					</div>	
+					<div class="form-group">
+						<label>Harga Jual</label>
+						<input name="harga" type="text" class="form-control" placeholder="Harga Jual per unit">
+					</div>	
+					<div class="form-group">
+						<label>Jumlah</label>
+						<input name="jumlah" type="text" class="form-control" placeholder="Jumlah">
+					</div>
+                    
+                    <option value="1"> AC </option>
+						<option value="2"> DISPENSER </option>
+						<option value="3"> DVD PLAYER </option>HOME THEATER
+						<option value="4"> HAIR DRYER </option>          
+						<option value="5"> HANDPHONE </option>KULKAS
+						<option value="6"> KAMERA </option>
+						<option value="7">  </option>MESIN CUCI
+						<option value="8">  </option>TV
+						<option value="9"> SETRIKA </option>
+						<option value="10"> LAPTOP </option>
+						<option value="11">  </option>
+						<option value="12"> RADIO </option>
+						<option value="13"> KIPAS ANGIN </option>
+						<option value="14"> LAMPU </option>
+						<option value="15"> MAGIC COM </option>
+						<option value="16"> KOMPOR LISTRIK </option>
+						<option value="17"> MICROWAVE </option>
+						<option value="18">  </option>
+						<option value="19"> VACUUM CLEANER </option>
+						<option value="20"> SPEAKER ACTIVE </option>
+--------------------------------------------------------------------------------------------------------------------------------
+                        <div class="form-group">
+				  <span id="spryselect1">
+					<select name="merk" class="form-control">
+						<option value="">--MERK--</option>
+						<?php
+							$tampil=mysql_query("SELECT * FROM merk ORDER BY merk asc");
+								while($data=mysql_fetch_array($tampil)) {
+							echo "<option value='$data[merk]'> $data[merk] </option>";
+							}
+						 ?>
+					</select>
+				  <span class=selectRequiredMsg>merk harus diisi.</span></span>
+				</div>
+				<div class="form-group">
+				  <span id="spryselect1">
+					<select name="merk" class="form-control">
+						<option value="">--JENIS--</option>
+						<?php
+							$tampil=mysql_query("SELECT * FROM jenis ORDER BY jenis asc");
+								while($data=mysql_fetch_array($tampil)) {
+							echo "<option value='$data[jenis]'> $data[jenis] </option>";
+							}
+						 ?>
+					</select>
+						  <span class=selectRequiredMsg>jenis harus diisi.</span></span>
+					  </div>
+                      <div class="form-group">
+				  <span id="sprytextfield4">
+					<input type="text" name="no_hp" class="form-control" placeholder="No Handphone" autofocus>
+				  <span class=textfieldRequiredMsg>No HP harus diisi.</span></span>
+				</div>
+----------------------------------------------------------------------------------------------------------------------------------
+		<form action="#" method="post">
+        <div class="form-group">
+		 <span id="spryselect1">
+		  <select name="merk" class="form-control">
+			  <option value="">-- MERK --</option>
+			  <?php
+				//  $tampil=mysql_query("SELECT * FROM merk ORDER BY merk asc");
+				//	  while($data=mysql_fetch_array($tampil)) {
+				//  echo "<option value='$data[merk]'> $data[merk] </option>";
+				//  }
+			   ?>
+		  </select>
+		<span class=selectRequiredMsg>merk harus diisi.</span></span>
+	  </div>
+	  <div class="form-group">
+		<span id="spryselect2">
+		  <select name="merk" class="form-control">
+			  <option value="">-- JENIS --</option>
+			  <?php
+				//  $tampil=mysql_query("SELECT * FROM jenis ORDER BY jenis asc");
+				//	  while($data=mysql_fetch_array($tampil)) {
+				//  echo "<option value='$data[jenis]'> $data[jenis] </option>";
+				//  }
+			   ?>
+		  </select>
+		<span class=selectRequiredMsg>Jenis harus diisi.</span></span>
+	  </div>
+	  <div class="form-group">
+		<span id="sprytextfield1">
+		  <input type="text" name="tipe" class="form-control" placeholder="Tipe/ Seri" autofocus>
+		<span class=textfieldRequiredMsg>Tipe harus diisi.</span></span>
+	   </div>
+	  <div class="form-group">
+		<span id="sprytextfield2">
+		  <input type="text" name="supplier" class="form-control" placeholder="Supplier" autofocus>
+		<span class=textfieldRequiredMsg>Supplier harus diisi.</span></span>
+	   </div>
+	  <div class="form-group">
+		<span id="sprytextfield3">
+		  <input type="text" name="modal" class="form-control" placeholder="Modal per unit" autofocus>
+		<span class=textfieldRequiredMsg>Harga Modal harus diisi.</span></span>
+	   </div>
+	  <div class="form-group">
+		<span id="sprytextfield4">
+		  <input type="text" name="jual" class="form-control" placeholder="Harga jual per unit" autofocus>
+		<span class=textfieldRequiredMsg>Harga Jual harus diisi.</span></span>
+	   </div>
+	  <div class="form-group">
+		<span id="sprytextfield5">
+		  <input type="text" name="jumlah" class="form-control" placeholder="Jumlah" autofocus>
+		<span class=textfieldRequiredMsg>Jumlah Jual harus diisi.</span></span>
+	   </div>

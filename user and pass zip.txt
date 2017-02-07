@@ -1,0 +1,81 @@
+--for school management system visit : www.optimumlinkup.com.ng/upload/index.php
+the username : segtism@gmail.com
+the password : admin
+the username : teacher
+the password : teacher
+the username : student
+the password : student
+the username : parent
+the password : parent
+
+--for pharmacy inventory
+User Name=maregu/haben,
+password=mara12/haber respectively.
+
+--huruf arab inventory
+username ahsan and password ahsan
+
+--hospital management sistem
+ga ada password n user
+
+
+--sistem informasi apartement
+HOW TO INSTALL
+extract the folder - ams.zip
+copy and paste ams folder to your root directory
+open the ams folder and locate ams_db.sql and open it
+create database name (ams_db) in your local server using wamp server or xamp or mamp
+click on sql, and paste all the text inside ams_db.sql
+click on go
+finally go to your browser to run the software - http://127.0.0.1/ams/index.php
+LOGIN DETAILS
+Super Admin ricky@yahoo.com 123456
+Admin devsolver@gmail.com 654321
+Owner mark@yahoo.com 123456
+Employee jhonson@yahoo.com 123456
+Renter ricky@yahoo.com 123456
+
+--Record management system
+admin
+username: admin
+password: admin
+
+user:
+username: user
+password: user
+
+database: db folder
+database name: hrms
+
+--taxi online
+Userman: admin@admin.com and password: admin123
+
+--bus tracking sys
+username: admin
+password: admin
+
+--bank account tracking system
+User name: nanzige
+Password: password
+
+--bus dispatch info system
+Dispatcher Login
+
+username: rolly
+password: admin
+Admin Login
+
+username: admin
+password: admin
+
+Database Name: terminal_bdis.sql
+
+--alumni tracking
+username: admin
+password: admin
+
+--School Management System (SMS) smstrail
+username: admin
+pass: admin
+
+--
